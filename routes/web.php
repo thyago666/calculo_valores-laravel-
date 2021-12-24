@@ -61,3 +61,7 @@ Route::post('/insert/importacao/', [App\Http\Controllers\itemAcessorioController
 Route::get('/entrada-acessorio', [App\Http\Controllers\entradaAcessorioController::class, 'index']);
 Route::post('/cadastro/entrada-acessorio', [App\Http\Controllers\entradaAcessorioController::class, 'insert']);
 Route::post('/pesquisa/entrada-acessorio', [App\Http\Controllers\entradaAcessorioController::class, 'pesquisa']);
+
+Route::get('/lancamento', [App\Http\Controllers\lancamentoController::class,'index']);
+Route::post('/pesquisa/lancamento', [App\Http\Controllers\lancamentoController::class,'show']);
+Route::post('/cadastro/lancamento', [App\Http\Controllers\lancamentoController::class,'store']);
