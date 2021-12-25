@@ -44,6 +44,7 @@ class lancamentoController extends Controller
             'vencimento'=>$request->vencimento,
         ]);
             $dados->save();
+            return view("welcome");
     }
 
     /**
